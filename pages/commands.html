@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commands</title>
+  <link rel="icon" href="../chris.png">
+  <link rel="stylesheet" href="commands.css">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="loaderFunction()">
+
+  <div id="loader">
+    <div class="loading">
+      <span></span>
+    </div>
+  </div>
+
+
+  <div id="page">
+  <nav>
+     <div class="logo noselect">
+        <img class="noselect" src="chris.png"> Chris Cross Official
+     </div>
+
+     <div class="openMenu noselect"><i class="fa fa-bars"></i></div>
+     <ul class="mainMenu noselect">
+       <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="tos.html"><i class="fas fa-book"></i> TOS</a></li>
+        <li><a class="active" href="commands.html"><i class="far fa-list-alt"></i> Commands</a></li>
+        <li><a href="about.html"><i class="fas fa-quote-left"></i> About</a></li>
+        <li><a href="https://discord.gg/hq835Dt8wf" target="_none"><i class="fas fa-headset"></i> Support</a></li>
+        <div class="closeMenu noselect"><i class="fa fa-times"></i></div>
+     </ul>
+  </nav>
+
+
+
+    <div class="container clear noselect">
+      <div class="row wrapper">
+
+        <span class="collapse" onclick="closeSidePanel()"><i class="fas fa-caret-left"></i></span>
+        <span class="expand" onclick="openSidePanel()"><i class="fas fa-caret-right"></i></span>
+
+        <div class="sidepanel">
+          <div class="divider left"></div>
+
+          <a class="title" href="#introduction">Introduction</a>
+
+          <a class="section" href="#aboutthisbot">About this Bot</a>
+          <a class="section" href="#technology">Technology</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#gettingstarted">Getting Started</a>
+
+          <a class="section" href="#inbothelp">In-Bot Help</a>
+          <a class="section" href="#addingthebot">Adding the Bot</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#commands">Discord Commands</a>
+
+          <div class="divider left"></div>
+
+          <a class="title" href="#premium">Premium</a>
+
+          <div class="space double"></div>
+
+        </div>
+
+        <div class="right-col">
+          <h1 id="introduction">Introduction</h1>
+
+          <p id="aboutthisbot">Chris Cross is the perfect bot for your servers, especially for users who feel lonely in
+            their servers. </p>
+
+          <h2>About this Bot</h2>
+
+          <p id="technology">This bot links multiple channels across multiple servers so that users can talk to each
+            other powered by Discord</p>
+
+          <h2>Technology</h2>
+
+          <p id="gettingstarted">The bot is bulit with python using the discord.py and guilded.py libraries.<br><br>The
+            bot uses it's own internal API that allows it to talk back and forth between your Guilded server and Discord
+            server, with less than 0.5 seconds of latency!</p>
+
+          <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+          <h1>Getting Started</h1>
+
+          <p id="inbothelp">Getting started with the bot is easy. Simply run the /request command, add in the channel
+            ID, make sure the bot has the correct permissions, and we will notify you when the channel is accepted. </p>
+
+          <h1>In-bot help</h1>
+
+          <p id="addingthebot"><b>Important:</b> You must agree to our ToS before adding this bot! <br> Use <span
+              class="codeBlock">/tos </span> for more information.</p>
+
+
+          <h2>Adding the bot</h2>
+
+          <p id="commands">To add the bot to your Discord server server <a
+              href="https://discord.com/api/oauth2/authorize?client_id=813795905894875176&permissions=536931392&scope=applications.commands%20bot"
+              target="_none">click here.</a><br><br> To add the bot to your Guilded server, <a
+              href="https://www.guilded.gg/b/4cefd784-da10-4b54-ad96-801f695fe88d" target="_none">click here.</a></p>
+
+
+          <div id="anime" class="divider" style="width:24%; margin:30px 0;"></div>
+
+
+          <h1>Commands</h1>
+          <h2>All commands</h2>
+          <div>
+            <ul>
+              <li class="collapsible">/request</li>
+              <div class="cmdCollapse">
+                Description: Request access to use the bot.
+                <br>
+                Usage: <span class="codeBlock">/request channel:<channel id> </span>
+                <br>
+                Example: <span class="codeBlock">/request channel:1234567890</span>
+                <br>
+                Note: Please make sure that the bot has the correct permissions to view the channel.
+              </div>
+              <li class="collapsible">/what</li>
+              <div class="cmdCollapse">
+                Description: Get more info about the bot and what it does
+                <br>
+                Usage: <span class="codeBlock">/what</span>
+                <br>
+                Example: <span class="codeBlock">/what</span>
+                <br>
+                Note: Only you can see the message.
+              </div>
+              <li class="collapsible">report message to moderators</li>
+              <div class="cmdCollapse">
+                Description: If you see a message that violates Chris's ToS, you can use this to report the message to
+                moderators.
+                <br>
+                Usage: <span class="codeBlock">Click message - Click Apps - Click "report message to moderators"</span>
+                <br>
+                Example: <span class="codeBlock">Fuck you - Report</span>
+                <br>
+                Note: Spam of this system can result in a suspension / elimination of you or your server's access to
+                Chris.
+              </div>
+              <li class="collapsible">Autobot Reminder</li>
+              <div class="cmdCollapse">
+                Description: Since Discord's webhook messages have a little <span class="codeBlock"> BOT </span> tag
+                next to the name, we often get people asking "Why is everyone a bot?" An AI algorithm will scan your
+                message, and if it thinks you are asking about the "bots", it will block your message and remind you
+                that these are users.
+                <br>
+                Usage: <span class="codeBlock"> why bots < character name> </span>
+                <br>
+                Example : <span class="codeBlock"> why are you bots?</span>
+                <br>
+                Note: Sometimes it is not accurate.
+              </div>
+            </ul>
+          </div>
+          <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+          <h1 id="premium">Premium</h1>
+
+          <ul>
+
+            <li>Status (DISCORD): Online</li>
+            <li>Status (GUILDED): Online</li>
+            <li>Status (WEBSITE): Online (duh)</li>
+            <!-- <li></li> -->
+          </ul>
+          <div class="doublespace"></div>
+          <div class="divider" style="width:24%; margin:30px 0;"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="../index.js"></script>
+  <script src="./commands.js"></script>
+</body>
+
+</html>
